@@ -14,9 +14,9 @@ st.title("DNA Sequence Analyzer")
 sequence = st.text_area("Enter DNA Sequence (ATCG)", "")
 
 # Validate DNA sequence input
-def is_valid_sequence(seq):
-    invalid_chars = [base for base in seq.upper().strip() if base not in "ATCG"]
-    return invalid_chars
+#def is_valid_sequence(seq):
+#    invalid_chars = [base for base in seq.upper().strip() if base not in "ATCG"]
+#    return invalid_chars
 
 # Functions for analysis
 def nucleotide_frequencies(seq):
