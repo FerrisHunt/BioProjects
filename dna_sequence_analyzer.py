@@ -18,6 +18,16 @@ sequence = st.text_area("Enter DNA Sequence (ATCG)", "")
 #    invalid_chars = [base for base in seq.upper().strip() if base not in "ATCG"]
 #    return invalid_chars
 
+# Validate DNA sequence input
+def is_valid_sequence(seq):
+    # Remove spaces from the sequence
+    seq = seq.replace(" ", "")
+    
+    # Check for invalid characters in the sequence
+    invalid_chars = [base for base in seq.upper() if base not in "ATCG"]
+    
+    return invalid_chars
+
 # Functions for analysis
 def nucleotide_frequencies(seq):
     return {
